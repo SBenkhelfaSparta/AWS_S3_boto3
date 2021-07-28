@@ -54,3 +54,14 @@ s3_client.upload_file(file_name, bucket, object_name)
 s3 = boto3.client('s3')
 s3.download_file('BUCKET_NAME', 'OBJECT_NAME', 'FILE_NAME')
 ```
+### Delete a file
+```
+s3 = boto3.resource("s3")
+obj = s3.Object("aniketbucketpython", "abcd.txt")
+obj.delete()
+```
+### Delete a bucket
+```
+client = boto3.client('s3')
+client.delete_bucket(Bucket='forrandall2',)
+```
