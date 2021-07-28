@@ -44,23 +44,23 @@ Have your terminal/cmd open in the folder of the script and run it. Your output 
 s3_client = boto3.client('s3')
 s3_client.create_bucket(Bucket=bucket_name)
 ```
-### Upload a file
+### Upload a File
 ```
 s3_client = boto3.client('s3')
 s3_client.upload_file(file_name, bucket, object_name)
 ```
-### Download a file
+### Download a File
 ```
 s3 = boto3.client('s3')
 s3.download_file('BUCKET_NAME', 'OBJECT_NAME', 'FILE_NAME')
 ```
-### Delete a file
+### Delete a File
 ```
 s3 = boto3.resource("s3")
 obj = s3.Object("aniketbucketpython", "abcd.txt")
 obj.delete()
 ```
-### Delete a bucket
+### Delete a Bucket
 ```
 client = boto3.client('s3')
 client.delete_bucket(Bucket='forrandall2',)
