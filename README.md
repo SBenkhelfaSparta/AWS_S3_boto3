@@ -37,3 +37,20 @@ for bucket in response['Buckets']:
     print(f'  {bucket["Name"]}')
 ```
 Have your terminal/cmd open in the folder of the script and run it. Your output should be the same as the `aws s3 ls` line.
+
+## boto3 Commands
+### Create a Bucket
+```
+s3_client = boto3.client('s3')
+s3_client.create_bucket(Bucket=bucket_name)
+```
+### Upload a file
+```
+s3_client = boto3.client('s3')
+s3_client.upload_file(file_name, bucket, object_name)
+```
+### Download a file
+```
+s3 = boto3.client('s3')
+s3.download_file('BUCKET_NAME', 'OBJECT_NAME', 'FILE_NAME')
+```
