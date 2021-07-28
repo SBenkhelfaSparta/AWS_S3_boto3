@@ -1,4 +1,4 @@
-## Installing Python 3.9 and the Latest pip Version
+## Installing Python 3.9 and the Latest pip Version on Linux
 ```
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
