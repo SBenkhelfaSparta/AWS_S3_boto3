@@ -15,6 +15,9 @@ python3.9 get-pip.py
 ```
 sudo pip3 install awscli
 sudo pip3 install boto3
+OR
+pip install awscli
+pip install boto3
 ```
 ## Connecting to AWS
 Run `aws configure` and enter the required details on your native OS or VM. Test it by running `aws s3 ls` to see all buckets.
